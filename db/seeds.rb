@@ -11,7 +11,10 @@ require "faker"
   restaurant = Restaurant.new(
     name: Faker::Book.title,
     address: "123 street address",
-    category: "chinese"
+    category: "chinese",
+    phone_number: "954-234-3842"
   )
   restaurant.save
 end
+
+

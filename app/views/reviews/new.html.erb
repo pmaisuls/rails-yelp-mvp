@@ -1,0 +1,11 @@
+<h1> Add a review </h1>
+
+<%= form_for([@restaurant, @review]) do |f| %>
+<%= f.label :content %>
+<%= f.text_field :content %>
+<%= f.label :rating %>
+<%= f.number_field :rating, min: 0, max: 5 %>
+<%= f.submit  %>
+<% end %>
+
+<p><%= link_to "Back to list", restaurants_path%></p>
